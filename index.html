@@ -1,108 +1,118 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
     <meta charset="utf-8">
+    <title>AngularJS: Q&A</title>
+
     <meta name="viewport" content="width=792, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <link rel="stylesheet" href="node_modules/shower/node_modules/shower-bright/styles/screen.css">
+    <style>
+        .hidden-slide {
+            display: none;
+        }
+        #me {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+        .slide.cover h2 {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            float: left;
+        }
+        .slide.cover img {
+            width: 1024px;
+            height: 640px;
+        }
+    </style>
 </head>
 <body class="list">
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>AngularJS: Q&A</h1>
+        <p>Piotr Kowalski</p>
     </header>
-    <section class="slide cover" id="Cover">
+
+    <section class="slide shout">
         <div>
-            <h2>Shower Presentation Engine</h2>
-
-            <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-            <img src="node_modules/shower/pictures/cover.jpg" alt="">
-            <!--
-                To apply styles to the certain slides
-                set slide ID to get needed elements
-                -->
-            <style>
-                #Cover h2 {
-                    margin: 30px 0 0;
-                    color: #FFF;
-                    text-align: center;
-                    font-size: 70px;
-                }
-
-                #Cover p {
-                    margin: 10px 0 0;
-                    text-align: center;
-                    color: #FFF;
-                    font-style: italic;
-                    font-size: 20px;
-                }
-
-                #Cover p a {
-                    color: #FFF;
-                }
-            </style>
+            <h2>AngularJS: Q&A</h2>
         </div>
     </section>
-    <section class="slide">
-        <div>
-            <h2>Shower Key Features</h2>
-            <ol>
-                <li>Built on HTML, CSS and vanilla JavaScript</li>
-                <li>All modern browsers are supported</li>
-                <li>Slide themes are separated from engine</li>
-                <li>Fully keyboard accessible</li>
-                <li>Printable to PDF</li>
-            </ol>
-            <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-        </div>
-    </section>
-    <section class="slide">
-        <div>
-            <h2>Plain Text on Your Slides</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco
-                laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in
-                reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.
+    <section class="slide">
+        <div>
+            <h2>Who am I?</h2>
+
+            <h4 itemprop="name">Piotr Kowalski</h4>
+            <strong itemprop="jobTitle">Kierownik Działu Aplikacji Webowych</strong>
+
+            <p>
+                <span itemprop="affiliation">Cyfrowy Polsat</span>,
+                <span itemprop="location">Warszawa</span>
             </p>
-        </div>
-    </section>
-    <section class="slide">
-        <div>
-            <h2>All Kind of Lists</h2>
-            <ol>
-                <li>Simple lists are marked with bullets</li>
-                <li>Ordered lists begin with a number</li>
-                <li>You can even nest lists one inside another
-                    <ul>
-                        <li>Or mix their types</li>
-                        <li>But do not go too far</li>
-                        <li>Otherwise audience will be bored</li>
-                    </ul>
-                </li>
-                <li>Look, seven rows exactly!</li>
-            </ol>
-        </div>
-    </section>
-    <section class="slide">
-        <div>
-            <h2>Serious Citations</h2>
-            <figure>
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia.</p>
-                </blockquote>
-                <figcaption>Marcus Tullius Cicero</figcaption>
+
+            <p>
+                <span itemprop="knows">JavaScript Ninja. Mac lover. Pebble evangelist.</span><br>
+                <span>Organizator <a href="http://warsawjs.com/" itemprop="memberOf">WarsawJS</a></span>
+            </p>
+
+            <figure id="me">
+                <a href="http://piecioshka.pl/blog/">
+                    <img src="images/me.jpg" alt="" itemprop="photo">
+                </a>
             </figure>
         </div>
     </section>
+
     <section class="slide">
+        <div>
+            <h2>Where am I?</h2>
+            <ol>
+                <li>Blog: <a href="http://piecioshka.pl/blog/">http://piecioshka.pl/blog/</a></li>
+                <li class="next">GitHub: <a href="http://github.com/piecioshka">http://github.com/piecioshka</a></li>
+                <li class="next">Twitter: <a href="http://twitter.com/piecioshka">http://twitter.com/piecioshka</a></li>
+                <li class="next">Soundcloud: <a href="http://soundcloud.com/piecioshka">http://soundcloud.com/piecioshka</a></li>
+                <li class="next">...</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <h2>JavaScript Ninja</h2>
+            <img src="images/js.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Motto</h2>
+            <figure>
+                <blockquote>
+                    <p>Kto chce szuka sposobu, kto nie chce szuka powodu.</p>
+                </blockquote>
+                <figcaption>Grzegorz Turniak</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <h2>Książka: AngularJS</h2>
+            <img src="photos/IMG_3775.JPG" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <h2>Książka: AngularJS. Pierwsze Kroki.</h2>
+            <img src="photos/IMG_3856.JPG" alt="">
+        </div>
+    </section>
+
+    <section class="hidden-slide">
         <div>
             <h2>Code Samples</h2>
             <pre>
@@ -123,7 +133,8 @@
             </pre>
         </div>
     </section>
-    <section class="slide">
+
+    <section class="hidden-slide">
         <div>
             <h2>Even Tables</h2>
             <table>
@@ -161,55 +172,30 @@
             <p>It’s good to have information organized.</p>
         </div>
     </section>
-    <section class="slide cover" id="Picture">
-        <div>
-            <h2>Pictures</h2>
-            <img src="node_modules/shower/pictures/picture.jpg" alt="">
-            <style>
-                #Picture h2 {
-                    color: #FFF;
-                }
-            </style>
-        </div>
-    </section>
+
     <section class="slide shout">
         <div>
-            <h2>You can even shout this way</h2>
+            <h2>
+                Last but not least!
+            </h2>
         </div>
     </section>
-    <section class="slide">
-        <div>
-            <h2>Inner Navigation</h2>
-            <ol>
-                <li>Lets you reveal list items one by one</li>
-                <li class="next">To keep some key points</li>
-                <li class="next">In secret from audience</li>
-                <li class="next">But it will work only once</li>
-                <li class="next">Nobody wants to see the same joke twice</li>
-            </ol>
-        </div>
-    </section>
-    <section class="slide shout" id="SeeMore">
-        <div>
-            <h2><img src="node_modules/shower/pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower">See more
-                on GitHub</a></h2>
-            <style>
-                #Picture h2 {
-                    color: #FFF;
-                }
 
-                #SeeMore h2 {
-                    font-size: 100px
-                }
-
-                #SeeMore img {
-                    width: 0.72em;
-                    height: 0.72em;
-                }
-            </style>
+    <section class="slide cover">
+        <div>
+            <img src="photos/IMG_3915-blur.jpg" alt="">
         </div>
     </section>
-    <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+
+    <section class="slide shout">
+        <div>
+            <h2>
+                Thanks!
+            </h2>
+        </div>
+    </section>
+
+    <p class="badge"><a href="https://github.com/piecioshka/presentation-angularjs-q-and-a">Fork me on Github</a></p>
     <!--
         To hide progress bar from entire presentation
         just remove “progress” element.
@@ -217,6 +203,7 @@
     <div class="progress">
         <div></div>
     </div>
+
     <script src="node_modules/shower/node_modules/shower-core/shower.min.js"></script>
     <!-- Copyright © 2014 Yours Truly, Famous Inc. -->
     <!-- Photos by John Carey, fiftyfootshadows.net -->
