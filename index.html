@@ -8,26 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel="stylesheet" href="node_modules/shower/node_modules/shower-bright/styles/screen.css">
-    <style>
-        .hidden-slide {
-            display: none;
-        }
-        #me {
-            position: absolute;
-            right: 30px;
-            top: 30px;
-        }
-        .slide.cover h2 {
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 10px;
-            padding: 20px;
-            float: left;
-        }
-        .slide.cover img {
-            width: 1024px;
-            height: 640px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="list">
     <header class="caption">
@@ -45,37 +26,27 @@
         <div>
             <h2>Who am I?</h2>
 
-            <h4 itemprop="name">Piotr Kowalski</h4>
             <strong itemprop="jobTitle">Kierownik Działu Aplikacji Webowych</strong>
 
             <p>
                 <span itemprop="affiliation">Cyfrowy Polsat</span>,
-                <span itemprop="location">Warszawa</span>
+                <span itemprop="location">Warsaw</span>
             </p>
 
             <p>
-                <span itemprop="knows">JavaScript Ninja. Mac lover. Pebble evangelist.</span><br>
-                <span>Organizator <a href="http://warsawjs.com/" itemprop="memberOf">WarsawJS</a></span>
+                <span itemprop="knows">JavaScript Ninja. Mac lover. Pebble evangelist.</span><br />
+                <span>Organizator <a href="http://warsawjs.com/" itemprop="memberOf">WarsawJS</a></span><br />
             </p>
+
+            <p class="note">"Kto chce szuka sposobu, kto nie chce szuka powodu."</p>
 
             <figure id="me">
                 <a href="http://piecioshka.pl/blog/">
                     <img src="images/me.jpg" alt="" itemprop="photo">
                 </a>
-            </figure>
-        </div>
-    </section>
 
-    <section class="slide">
-        <div>
-            <h2>Where am I?</h2>
-            <ol>
-                <li>Blog: <a href="http://piecioshka.pl/blog/">http://piecioshka.pl/blog/</a></li>
-                <li class="next">GitHub: <a href="http://github.com/piecioshka">http://github.com/piecioshka</a></li>
-                <li class="next">Twitter: <a href="http://twitter.com/piecioshka">http://twitter.com/piecioshka</a></li>
-                <li class="next">Soundcloud: <a href="http://soundcloud.com/piecioshka">http://soundcloud.com/piecioshka</a></li>
-                <li class="next">...</li>
-            </ol>
+                <figcaption itemprop="name">Piotr Kowalski</figcaption>
+            </figure>
         </div>
     </section>
 
@@ -86,29 +57,213 @@
         </div>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="social-slide">
         <div>
-            <h2>Motto</h2>
+            <h2>Where am I?</h2>
+
             <figure>
-                <blockquote>
-                    <p>Kto chce szuka sposobu, kto nie chce szuka powodu.</p>
-                </blockquote>
-                <figcaption>Grzegorz Turniak</figcaption>
+                <a href="http://piecioshka.pl/blog/">
+                    <img src="images/social/blog-icon.jpg" alt=""/>
+                    <span>piecioshka.pl/blog</span>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="http://github.com/piecioshka">
+                    <img src="images/social/github-icon.png" alt=""/>
+                    <span>github.com/piecioshka</span>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="http://twitter.com/piecioshka">
+                    <img src="images/social/twitter-icon.png" alt=""/>
+                    <span>twitter.com/piecioshka</span>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="http://soundcloud.com/piecioshka">
+                    <img src="images/social/soundcloud-icon.png" alt=""/>
+                    <span>soundcloud.com/piecioshka</span>
+                </a>
             </figure>
         </div>
     </section>
 
     <section class="slide cover">
         <div>
-            <h2>Książka: AngularJS</h2>
-            <img src="photos/IMG_3775.JPG" alt="">
+            <h2>Book: AngularJS</h2>
+            <img src="photos/book-angularjs/IMG_3775-blur.jpg" alt="">
         </div>
     </section>
 
     <section class="slide cover">
         <div>
-            <h2>Książka: AngularJS. Pierwsze Kroki.</h2>
-            <img src="photos/IMG_3856.JPG" alt="">
+            <h2>Book: AngularJS. Pierwsze Kroki.</h2>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3856-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide shout">
+        <div>
+            <h2>My private notes... let's go!</h2>
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs/IMG_3917-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs/IMG_3921-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs/IMG_3929-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs/IMG_3934-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs/IMG_3942-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs/IMG_3943-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs/IMG_3982-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide shout">
+        <div>
+            <h2>More? Go go go!</h2>
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3871-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3872-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3875-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3877-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3878-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3880-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3882-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3883-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3884-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3887-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3890-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3903-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3904-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3905-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3906-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3908-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3913-blur.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="slide cover">
+        <div>
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3914-blur.jpg" alt="">
         </div>
     </section>
 
@@ -183,7 +338,7 @@
 
     <section class="slide cover">
         <div>
-            <img src="photos/IMG_3915-blur.jpg" alt="">
+            <img src="photos/book-angularjs-pierwsze-kroki/IMG_3915-blur.jpg" alt="">
         </div>
     </section>
 
@@ -202,9 +357,13 @@
             <ul>
                 <li><a href="https://github.com/piecioshka/simple-angular-app">https://github.com/piecioshka/simple-angular-app</a></li>
                 <li><a href="https://github.com/piecioshka/test-angular-unit-test">https://github.com/piecioshka/test-angular-unit-test</a></li>
-                <li><a href="https://github.com/piecioshka/presentation-angularjs-q-and-a">https://github.com/piecioshka/presentation-angularjs-q-and-a</a></li>
                 <li><a href="https://github.com/piecioshka/test-angular-disable-watchers">https://github.com/piecioshka/test-angular-disable-watchers</a></li>
             </ul>
+
+            <p>
+                Slides: <br />
+                <a href="https://github.com/piecioshka/presentation-angularjs-q-and-a">https://github.com/piecioshka/presentation-angularjs-q-and-a</a>
+            </p>
         </div>
     </section>
 
