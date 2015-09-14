@@ -1,12 +1,12 @@
-.social-slide {
+.slide.social-slide {
     background: #52A2DF;
 }
 
-.social-slide::after {
+.slide.social-slide::after {
     content: ''
 }
 
-.social-slide > div {
+.slide.social-slide > div {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
@@ -14,13 +14,13 @@
     height: 100%;
 }
 
-.social-slide h2 {
+.slide.social-slide h2 {
     color: #FFFFFF;
     text-align: center;
     margin: 28px 0 30px 0;
 }
 
-.social-slide figure {
+.slide.social-slide figure {
     float: left;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -31,12 +31,12 @@
     width: 300px;
 }
 
-.social-slide figure:nth-child(2),
-.social-slide figure:nth-child(4) {
+.slide.social-slide figure:nth-child(2),
+.slide.social-slide figure:nth-child(4) {
     margin-left: 200px;
 }
 
-.social-slide figure a {
+.slide.social-slide figure a {
     display: block;
     color: #FFFFFF;
     font-size: smaller;
