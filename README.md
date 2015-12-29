@@ -1,2 +1,2 @@
-# presentation-angularjs-q-and-a
+# slides-angularjs-q-and-a
 
