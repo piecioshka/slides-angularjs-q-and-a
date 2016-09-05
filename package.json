@@ -1,6 +1,3 @@
 {
-  "private": true,
-  "dependencies": {
-    "shower": "^1.0.15"
-  }
+    "private": true
 }
