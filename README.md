@@ -2,7 +2,7 @@
 
 > :clipboard: Slides for Angular Warsaw #3
 
-## Open slides in browser
+## Preview 🎉
 
 http://piecioshka.github.io/slides-angularjs-q-and-a/
 
